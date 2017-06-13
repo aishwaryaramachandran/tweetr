@@ -1,0 +1,28 @@
+
+.new-tweet {
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  margin: auto;
+  position: relative;
+  width: 350px;
+  height: 180px;
+  border-radius: 10px;
+  padding: 1px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+textarea{
+  padding-top: 10px;
+  width: 300px;
+
+}
+.counter{
+
+}
+h2{
+  border-bottom: 1px solid black;
+}
+.counter{
+  float: right;
+}
