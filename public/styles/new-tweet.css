@@ -1,4 +1,8 @@
 
+.hidden{
+  display: none;
+}
+
 .new-tweet {
   background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
   background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
@@ -6,7 +10,6 @@
   margin: auto;
   position: relative;
   width: 350px;
-  height: 180px;
   border-radius: 10px;
   padding: 1px;
   padding-left: 20px;
@@ -17,12 +20,104 @@ textarea{
   width: 300px;
 
 }
-.counter{
-
+.counter-color{
+  color: red;
 }
+
 h2{
   border-bottom: 1px solid black;
 }
 .counter{
   float: right;
+}
+
+#tweet-container{
+  border-radius:10px;
+  padding-right:1em;
+  padding-left: 1em;
+  padding-top: 30px;
+}
+
+
+}
+#tweet-container :after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+article.tweet{
+  width:350px;
+  height: 180px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  opacity: 0.8;
+  margin-bottom: 5px;
+
+}
+article.tweet:hover{
+  opacity: 1;
+}
+
+article.tweet img{
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+  width: 40px;
+  height: 40px;
+  float:left;
+}
+
+
+article.tweet header{
+  background-color: lightgrey;
+  height: 50px;
+  border-radius: 10px 10px 0px 0px;
+
+}
+article.tweet footer{
+  border-top: 1px solid grey;;
+}
+article.tweet h3{
+  float: left;
+  padding-left: 10px;
+}
+article.tweet h4{
+  float: right;
+  padding-right: 10px;
+}
+.twitter-handle{
+  float: left;
+  padding-left: 10px;
+  color: #AEAEAE
+}
+
+ .icon{
+  display: none;
+
+}
+.tweet:hover{
+  opacity: 1;
+
+}
+.fa {
+  float: right;
+  padding: 3px;
+  visibility: hidden;
+  color:#00a087;
+  margin-top: 20px;*/
+}
+.tweet:hover .fa {
+  visibility: visible;
+}
+
+article.tweet p{
+  padding-left: 10px;
+}
+.tweet-content{
+  padding-bottom: 20px;
+}
+article.tweet footer h4{
+  float: left;
+  padding-left: 10px;
 }

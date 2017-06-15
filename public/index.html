@@ -14,10 +14,12 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type= "text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type= "text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
+    <script type="text/javascript" src ="https://momentjs.com/downloads/moment.js"></script>
     <script type="text/javascript" src="/scripts/app.js"></script>
   </head>
 
@@ -27,19 +29,27 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png">
       <span class="header">Tweeter</span>
+      <button class="tweet-compose" type="submit" value="Compose">
+      <img src='/images/compose.png'/>
+      Compose</button>
+
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-   <section class="new-tweet">
-  <h2>Compose Tweet</h2>
-  <form method= "POST" action="/tweets/">
-    <textarea name="text" placeholder="What are you humming about?"></textarea>
-    <input type="submit" value="Tweet">
-    <span class="counter">140</span>
-  </form>
-</section>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form method= "POST" action="/tweets/">
+          <textarea id="tweet-composer" name="text" placeholder="What are you humming about?"></textarea>
+          <input type="submit" value="Tweet">
+          <span class="counter">140</span>
+        </form>
+        <p class="error-message hidden" id="empty-tweet">Error: You can't submit an empty tweet!</p>
+        <p class="error-message hidden" id="over-limit-tweet">Error: Can't submit a tweet over 140 characters</p>
+      </section>
+      <section id="tweet-container">
+      </section>
     </main>
-
+    <script src="/scripts/composer-char-counter.js"></script>
   </body>
 </html>
