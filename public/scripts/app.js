@@ -35,8 +35,8 @@ $(document).ready(function(){
                 <i class="fa fa-heart" aria-hidden="true"></i>
                 <i class="fa fa-flag" aria-hidden="true"></i>
               </footer>
-            </article>`
-  };
+            </article>`;
+  }
 
 //The function takes in an array of tweet objects
 //and  prepends each one to the existing list of tweet posts
@@ -50,6 +50,7 @@ $(document).ready(function(){
 
 // function that uses ajax to GET tweets as a JSON object
 //from http://localhost:8080/tweets page
+  function loadTweets(){
     $.ajax({
       url: '/tweets',
       type: 'GET',
