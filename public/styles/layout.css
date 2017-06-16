@@ -22,6 +22,8 @@ body {
 
 }
 
+/* CSS for overall container including the Tweet Composer and Tweets*/
+
 main{
   width:450px;
   margin:0 auto;
@@ -29,5 +31,5 @@ main{
   padding-top: 100px;
   padding-left: 2em;
   padding-right: 2em;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }

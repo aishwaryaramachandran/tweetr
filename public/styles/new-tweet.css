@@ -1,3 +1,5 @@
+/*this file contains all the style requirements for
+the new-tweet section */
 
 .hidden{
   display: none;
@@ -14,12 +16,15 @@
   padding: 1px;
   padding-left: 20px;
   padding-right: 30px;
+  display: none;
 }
+
 textarea{
   padding-top: 10px;
   width: 300px;
 
 }
+
 .counter-color{
   color: red;
 }
@@ -27,6 +32,7 @@ textarea{
 h2{
   border-bottom: 1px solid black;
 }
+
 .counter{
   float: right;
 }
@@ -38,8 +44,6 @@ h2{
   padding-top: 30px;
 }
 
-
-}
 #tweet-container :after{
   content: "";
   display: table;
@@ -47,14 +51,13 @@ h2{
 }
 
 article.tweet{
-  width:350px;
-  height: 180px;
   border-radius: 10px;
   border: 1px solid grey;
   opacity: 0.8;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 
 }
+
 article.tweet:hover{
   opacity: 1;
 }
@@ -68,24 +71,26 @@ article.tweet img{
   float:left;
 }
 
-
 article.tweet header{
   background-color: lightgrey;
   height: 50px;
   border-radius: 10px 10px 0px 0px;
+}
 
-}
 article.tweet footer{
-  border-top: 1px solid grey;;
+  border-top: 1px solid grey;
 }
+
 article.tweet h3{
   float: left;
   padding-left: 10px;
 }
+
 article.tweet h4{
   float: right;
   padding-right: 10px;
 }
+
 .twitter-handle{
   float: left;
   padding-left: 10px;
@@ -96,10 +101,12 @@ article.tweet h4{
   display: none;
 
 }
+
 .tweet:hover{
   opacity: 1;
 
 }
+
 .fa {
   float: right;
   padding: 3px;
@@ -107,6 +114,7 @@ article.tweet h4{
   color:#00a087;
   margin-top: 20px;*/
 }
+
 .tweet:hover .fa {
   visibility: visible;
 }
@@ -114,10 +122,18 @@ article.tweet h4{
 article.tweet p{
   padding-left: 10px;
 }
+
 .tweet-content{
   padding-bottom: 20px;
 }
+
 article.tweet footer h4{
   float: left;
   padding-left: 10px;
+}
+
+article.tweet :after{
+  content: "";
+  display: table;
+  clear: both;
 }
