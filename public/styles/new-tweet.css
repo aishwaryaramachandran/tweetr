@@ -6,9 +6,9 @@ the new-tweet section */
 }
 
 .new-tweet {
-  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -webkit-linear-gradient(bottom, #ADD1C7, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #ADD1C7, #EEEEEE 175px);
+  background: linear-gradient(bottom, #ADD1C7, #EEEEEE 175px);
   margin: auto;
   position: relative;
   width: 350px;
